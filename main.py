@@ -9,8 +9,8 @@ app=FastAPI(
   description='Predicting Water Potability'
 )
 
-with open('C:/Users/bored/Music/Water_Potability/model.joblib'):
-  model = load('C:/Users/bored/Music/Water_Potability/model.joblib')
+with open('model.joblib'):
+  model = load('model.joblib')
 
 @app.get('/')
 def index():
